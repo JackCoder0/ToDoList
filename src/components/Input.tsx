@@ -1,16 +1,16 @@
-import { CreateButton } from './Buttons'
-
 import styles from './Input.module.css'
 
-export function Input() {
+export function Input({
+  ...rest
+}: React.DetailedHTMLProps<
+  React.InputHTMLAttributes<HTMLInputElement>,
+  HTMLInputElement
+>) {
   return (
-    <div className={styles.inputWrapper}>
-      <input
-        className={styles.input}
-        placeholder='Adicione uma nova tarefa'
-        type="text"
-      />
-      <CreateButton />
-    </div>
+    <input
+      className={styles.container}
+      placeholder="Adicione uma nova tarefa"
+      {...rest}
+    />
   )
 }

@@ -4,7 +4,7 @@ import toDoLogo from '../assets/logo.svg'
 
 export function Header() {
   return (
-    <header className={styles.header}>
+    <header className={styles.container}>
       <img src={toDoLogo} />
     </header>
   )
