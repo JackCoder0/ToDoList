@@ -1,0 +1,27 @@
+.inputWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  gap: .5rem;
+
+  margin-top: calc(0px - 1.25rem - 6px);
+}
+
+.input {
+  background: var(--gray-500);
+  color: var(--gray-100);
+  font-size: 1rem;
+  border: 0;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 39rem;
+  height: 3.3rem;
+}
+
+.input:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 2px var(--purple-300);
+}

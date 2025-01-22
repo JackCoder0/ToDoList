@@ -1,0 +1,50 @@
+.wrapper {
+  margin: 2rem auto;
+  padding: 0 1rem;
+  max-width: 46.5rem;
+
+  /* display: grid;
+  grid-template-columns: 256px 1fr;
+  gap: 2rem;
+  align-items: flex-start; */
+}
+
+.labelWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  font-weight: bold;
+  /* font-size: .875rem; */
+}
+
+.toDoCreated,
+.completed {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+}
+
+.toDoCreated span {
+  color: var(--blue-100);
+}
+
+.completed span {
+  color: var(--purple-100);
+}
+
+.toDoCreated p,
+.completed p {
+  background: var(--gray-400);
+  text-align: center;
+  border-radius: 50px;
+  padding: .125rem .5rem;
+}
+
+hr {
+  margin-top: 1.5rem;
+  background-color: var(--gray-400);
+  height: 2px;
+  border: 0;
+}
